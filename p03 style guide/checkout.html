@@ -1,0 +1,61 @@
+
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P01 - Style Guide Template</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a id="product-background" href="#">
+          <img src="img/sugarfina.jpg" >
+        </a>
+        <nav class="product_nav">
+        <ol id="nav_items">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="product.html">PRODUCT</a></li>
+          <li><a href="checkout.html">CHECK OUT</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+        </ol>
+        </nav>
+     </header>
+     <div class="cart">
+     	<p class="box">Shopping Cart</p>
+     </div>
+     <div class="cart-item">
+     	<img src="img/candy3.jpg">
+        <p>Sparkling Rose Bears $9.99 </p>
+        <label for="quantity1">Quantity: </label>
+        <input type="text" name="number" id="quantity1">
+     </div>
+     <div class="cart-item">
+     	<img src="img/sugarbox1.jpeg" alt="chocolate box">
+        <p>But First Rose $9.99</p>
+        <label for="quantity2">Quantity: </label>
+        <input type="text" name="number" id="quantity2">
+     </div>
+
+
+     <p id="pay-form">payment form</p>
+     <div class="payment">
+        <input id="payment_form1" type="radio" name="gender" value="male">Debit card<br>
+        <input id="payment_form2" type="radio" name="gender" value="female">Master card<br>
+        <input id="payment_form3" type="radio" name="gender" value="other">Visa card<br>
+        <div>
+        <label class="pay_label" for="card-number">Card number:</label>
+        <input type="text" name="username" id="card-number"><br><br>
+        <label class="pay_label" for="first-name">First name:</label>
+        <input type="text" name="username" id="first-name">
+        <label class="pay_label" for="last-name">Last name:</label>
+        <input type="text" name="username" id="last-name"><br><br>
+        <label class="pay_label" for="street">Street address:</label>
+        <input type="text" name="username" id="street"><br><br>
+        <label class="pay_label" for="city">city:</label>
+        <input type="text" name="username" id="city">
+        <label class="pay_label" for="ZIP">ZIP:</label>
+        <input type="text" name="username" id="ZIP"><br>
+       <a id="submit-but" href="#">Pay</a>
+   </div>
+
+
+</body>
+</html>

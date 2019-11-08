@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/element.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/element.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <style>
+        body{background-color: rgb(242, 236, 231)}
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <nav class="nav">
+        <el-row>
+            <el-col :lg="14" :xs="6"><div class="nav-title ">Yi Hao</div></el-col>
+            <el-col :lg="8" :xs="18">
+                <div class="nav-btn text-center ">
+                    <el-row>
+                        <el-col :span="4" :offset="2"><div class="nav-menu-item"><a href="index.html" >Home</a></div></el-col>
+                        <el-col :span="4" ><div class="nav-menu-item"><a href="p1.html" >P1</a></div></el-col>
+                        <el-col :span="4" ><div class="nav-menu-item"><a href="p2.html" >P2</a></div></el-col>
+                        <el-col :span="4" ><div class="nav-menu-item"><a href="p3.html" >Contact</a></div></el-col>
+                        <el-col :span="4" ><div class="nav-menu-item"><a href="p4.html" >About</a></div></el-col>
+                    </el-row>
+                </div>
+            </el-col>
+        </el-row>
+    </nav>
+
+    <main class="content">
+        <div class="grid-side-item side-item">
+            <el-row>
+                <el-col :xs="9" :lg="{span:3,offset:3}">
+                    <div class="side-item-text">
+                        <h4 class="side-item-title">About me </h4>
+                        <div class="side-item-content">
+                            The rain was killing the last days of summer,
+                            you had been killing my last breath of love since along time ago.
+
+                        </div>
+                    </div>
+                </el-col>
+                <el-col :xs="15" :lg="12">
+                    <div class="side-item-img ">
+                        <img src="assets/image/0.jpg">
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+
+        <div class="grid-side-item">
+            <el-row>
+                <el-row>
+                    <el-col :xs="8" :lg="{span:6,offset:3}">
+                        <div class="grid-content-item">
+                            <h3 class="grid-content-item-title">01</h3>
+                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
+                            <div class="grid-content-item-content">
+                                <span class="grid-content-item-line"></span>
+                                <h4 class="grid-content-item-content-title">Test</h4>
+                                <p class="grid-content-item-content-txt">About me </p>
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :xs="8" :lg="6">
+                        <div class="grid-content-item">
+                            <h3 class="grid-content-item-title">02</h3>
+                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
+                            <div class="grid-content-item-content">
+                                <span class="grid-content-item-line"></span>
+                                <h4 class="grid-content-item-content-title">Test</h4>
+                                <p class="grid-content-item-content-txt">About me </p>
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :xs="8" :lg="6">
+                        <div class="grid-content-item">
+                            <h3 class="grid-content-item-title">03</h3>
+                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
+                            <div class="grid-content-item-content">
+                                <span class="grid-content-item-line"></span>
+                                <h4 class="grid-content-item-content-title">Test</h4>
+                                <p class="grid-content-item-content-txt">About me </p>
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-row>
+        </div>
+
+        <div class="grid-side-item">
+            <div class="grid-side-punctuate"><label>‘‘</label></div>
+            <div class="side-item-three-content">
+                <div>
+                  <p>I am a second-year student in Simon Fraser University, </p>
+                    and this is my first year in SIAT. I was major in environmental science at my first year, <p>
+                    however, I felt exhausted and bored when I took environmental courses<p>
+                   I felt SIAT is the program that I really want to get in after I taking several IAT courses.<p>
+                    I am an international student from China, after finishing my 10th grade in China, <p>
+                    I came to Vancouver to continue my high school. My personality is like a cat, shy, do not talk much and I love to be alone, I choose this picture to represent me because I enjoy seeing ocean, and it inspires me a lot.
+
+                </div>
+            </div>
+            <div class="grid-side-punctuate"><label>’’</label></div>
+        </div>
+
+        <div class="grid-side-item side-item">
+            <el-row>
+                <el-col :xs="15" :lg="{span:12,offset:3}">
+                    <div class="side-item-img ">
+                        <img src="assets/image/0.jpg">
+                    </div>
+
+                </el-col>
+                <el-col :xs="9" :lg="6">
+                    <div class="side-item-text">
+                        <h4 class="side-item-title">About me </h4>
+                        <div class="side-item-content">
+                            The rain was killing the last days of summer,
+                            you had been killing my last breath of love since along time ago.
+                        </div>
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>@copyright  2018-2019</div>
+    </footer>
+</div>
+<script>
+    var vue = new Vue({
+        el:"#app",
+        data:{
+            activeIndex: '1',
+        },
+        mounted() {
+
+        }
+    });
+</script>
+</body>
+</html>
