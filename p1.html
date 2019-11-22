@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/element.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/element.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(242, 236, 231)
+        }
+    </style>
+</head>
+
+<body id="p1">
+    <div id="app">
+
+        <nav class="nav">
+            <el-row>
+                <el-col :lg="14" :xs="6">
+                    <div class="nav-title ">Yi Hao</div>
+                </el-col>
+                <el-col :lg="8" :xs="18">
+                    <div class="nav-btn text-center ">
+                        <el-row>
+                            <el-col :span="5" :offset="2">
+                                <div class="nav-menu-item"><a href="index.html">Home</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p1.html">Project1</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p2.html">Project2</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p3.html">Contact</a></div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-col>
+            </el-row>
+        </nav>
+
+        <main class="content">
+            <div class="side-item">
+                <el-row>
+                    <el-col :xs="24" :lg="{span:6,offset:4}">
+                        <div class="side-item-img ">
+                            <img src="assets/image/a1.jpg" style="width: 90%;display: block;padding: 0;margin: auto;">
+                        </div>
+                    </el-col>
+                    <el-col :xs="24" :lg="{span:11}">
+                        <div class="side-item-text p1t1">
+                            <h4 class="side-item-title text-center">Design thinking / Process Analysis </h4>
+                            <h4 class="side-item-title text-center"> IAT222 Interactive Arts</h4>
+
+                            <div class="side-item-content">
+                                In this class, we as a team are asked to produce a work of interactive arts. This work
+                                will be displayed at SIAT,
+                                and it has to reflect artist practice in at least one area of studied in class. <p>
+                                    First step: as a group, we signed a team contract. We made rules within the team,
+                                    for example, what will we do if one team member missed a meeting, or missed a
+                                    presentation.
+
+                                </p>
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+
+            <div class="side-item">
+                <el-row>
+                    <el-col :xs="24" :lg="{span:9,offset:4}">
+                        <div class="side-item-text p1t2">
+                            <h4 class="side-item-title">Second Step</h4>
+                            <div class="side-item-content">
+                                The team had to determine the overall topic for the artwork. Additionally, we had to
+                                choose a scope which interested all team members while reflecting team inspirations.
+                                This helped decide our final project goal.
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :xs="24" :lg="6">
+                        <div class="side-item-img ">
+                            <img src="assets/image/a2.jpg" style="width: 90%;display: block;padding: 0;margin: auto;">
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+
+            <div class="side-item">
+                <el-row>
+                    <el-col :xs="24" :lg="{span:8,offset:4}">
+                        <div class="side-item-img side-item-img-small">
+                            <img src="assets/image/a3.jpg" style="width: 90%;display: block;padding: 0;margin: auto;">
+                        </div>
+                    </el-col>
+
+                    <el-col :xs="24" :lg="8">
+                        <div class="side-item-text p1t3">
+                            <h4 class="side-item-title">Third Step</h4>
+                            <div class="side-item-content">
+                                We introduced our artwork proposal. First the team decided on a single topic after
+                                discussing what we wanted to present within the final artwork. Other areas were
+                                considered, such as how to make the piece work. For instance, utilizing sketches for
+                                showing how the final piece should appear, ways it could interact with audience members,
+                                and what type of feeling it should create.
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+
+            <div class="side-item">
+                <el-row>
+                    <el-col :xs="24" :lg="{span:8,offset:4}">
+                        <div class="side-item-text p1t4">
+                            <h4 class="side-item-title text-center">Forth Step / Fifth Step </h4>
+                            <div class="side-item-content">
+                                The artwork prototype. The team
+                                began working and encounter several problems. First, the professor stated our prototype
+                                was too simple.
+                                Therefore, we had to discussed and rethink of alternative methods for participants to
+                                interact with the final artwork.<p>
+                                    Final project in the Gallery. Our final artwork was showcased at SFU. To ensure
+                                    participants understood, we included a description with the final piece. We lacked
+                                    enough gold paper during the final stage,
+                                    therefore, we decided to apply it only on two sides of the box’s interior. Instead
+                                    of four sides.
+
+                            </div>
+                        </div>
+                    </el-col>
+                    <el-col :xs="24" :lg="8">
+                        <div class="side-item-img side-item-img-small ">
+                            <img src="assets/image/a4.jpg" style="width: 90%;display: block;padding: 0;margin: auto;">
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div>@copyright 2018-2019</div>
+        </footer>
+    </div>
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            data: {
+                activeIndex: '1',
+            },
+            mounted() {
+
+            }
+        });
+    </script>
+</body>
+
+</html>
