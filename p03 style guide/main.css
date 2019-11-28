@@ -1,0 +1,160 @@
+
+
+
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background: #EEE;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.p{
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+}
+.title {
+    color: #BC896E;
+    text-align: center
+}
+
+.center {
+    text-align: center;
+}
+
+header nav a {
+    color:orange;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid #A77760;
+    width: 220px;
+    margin-bottom: 10px;
+    text-decoration:none;
+}
+
+#picone img:hover{
+  transform:scale(1.05);
+}
+
+.element {
+    padding-bottom: 40px;
+    border-top-width: 55px;
+    border-top-style: solid;
+    border-top-color: #E09873;
+    color: #314570;
+}
+
+.element p{
+  color: #A37F6F;
+
+}
+
+
+section .nav a {
+    padding: 0.5rem;
+    display: inline-block;
+    width: 150px;
+    height: 27px;
+    margin-bottom: 0.4rem;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #E09873;
+    border-radius:10px;
+}
+
+.nav_btn:hover {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.default-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 11px;
+    display: inline-block;
+    color: white;
+    background-color: #A77760;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.textlink {
+    text-transform: uppercase;
+    color: #333333;
+}
+
+    .textlink h4 {
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+.one, .two, .three, .four {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.one {
+    margin-top: 30px;
+}
+
+.camera_lists {
+    margin-top: 20px;
+}
+
+.header {
+  background-color:  #A37F6F;
+    height: 60px;
+    width: 99.8%;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom: 30px;
+}
+
+    .header p {
+        font-family: sans-serif;
+        font-size: 70px;
+        color: white;
+    }
+
+    .header a {
+      display: inline-block;
+      padding-top: 2rem;
+      margin-right: 10rem;
+      margin-left: -2rem;
+
+        color: #314570;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+        .header a:hover {
+            background-color: #E09873;
+        }
+
+
+
+
+#picone {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+    #picone img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
