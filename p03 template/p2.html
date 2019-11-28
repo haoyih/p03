@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,141 +12,197 @@
     <script src="assets/js/element.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <style>
-        body{background-color: rgb(242, 236, 231)}
+        body {
+            background-color: rgb(242, 236, 231)
+        }
+        h4{
+            margin-bottom: 20px;
+        }
     </style>
 </head>
-<body>
-<div id="app">
 
-    <nav class="nav">
-        <el-row>
-            <el-col :lg="14" :xs="6"><div class="nav-title ">Yi Hao</div></el-col>
-            <el-col :lg="8" :xs="18">
-                <div class="nav-btn text-center ">
-                    <el-row>
-                        <el-col :span="4" :offset="2"><div class="nav-menu-item"><a href="index.html" >Home</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p1.html" >P1</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p2.html" >P2</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p3.html" >Contact</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p4.html" >About</a></div></el-col>
-                    </el-row>
-                </div>
-            </el-col>
-        </el-row>
-    </nav>
+<body id="p2">
+    <div id="app">
 
-    <main class="content">
-        <div class="grid-side-item side-item">
+        <nav class="nav">
             <el-row>
-                <el-col :xs="9" :lg="{span:3,offset:3}">
-                    <div class="side-item-text">
-                        <h4 class="side-item-title">About me </h4>
-                        <div class="side-item-content">
-                          I am a second-year student in Simon Fraser University, and this is my first year in SIAT. I was major in environmental science at my first year, however, I felt exhausted and bored when I took environmental courses. I felt SIAT is the program that I really want to get in after I taking several IAT courses. I am an international student from China, after finishing my 10th grade in China, I came to Vancouver to continue my high school.
-
-
-                        </div>
-                    </div>
+                <el-col :lg="14" :xs="6">
+                  <div class="nav-title "><a href="Template/index3.html">Yi Hao</a></div>
                 </el-col>
-                <el-col :xs="15" :lg="12">
-                    <div class="side-item-img ">
-                        <img src="assets/image/0.jpg">
+                <el-col :lg="8" :xs="18">
+                    <div class="nav-btn text-center ">
+                        <el-row>
+                            <el-col :span="5" :offset="2">
+                                <div class="nav-menu-item"><a href="index.html">Home</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p1.html">Project1</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p2.html">Project2</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p3.html">Contact</a></div>
+                            </el-col>
+                        </el-row>
                     </div>
                 </el-col>
             </el-row>
-        </div>
+        </nav>
 
-        <div class="grid-side-item">
-            <el-row>
+
+        <main class="content">
+            <div class="grid-side-item side-item" >
                 <el-row>
-                    <el-col :xs="8" :lg="{span:6,offset:3}">
-                        <div class="grid-content-item">
-                            <h3 class="grid-content-item-title">01</h3>
-                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
-                            <div class="grid-content-item-content">
-                                <span class="grid-content-item-line"></span>
-                                <h4 class="grid-content-item-content-title">Test</h4>
-                                <p class="grid-content-item-content-txt">About me </p>
+                    <el-col :xs="{span:20,offset:2}" :sm="{span:8,offset:3}" :md="{span:8,offset:3}"
+                        :lg="{span:4,offset:3}">
+                        <div class="side-item-text p2t1" style="padding-top:20px;">
+                            <h4 class="side-item-title">Project 2: Process Analysis</h4>
+                            <h4 class="side-item-title">PUB 375</h4>
+
+                            <div class="side-item-content" >
+                                This is a project from Pub 375, the goal of this project is to build up a
+                                real magazine through the whole semester, we were working in group of five,
+                                two of us from IAT program are responsible for design the magazine.
+
+
                             </div>
                         </div>
                     </el-col>
-                    <el-col :xs="8" :lg="6">
-                        <div class="grid-content-item">
-                            <h3 class="grid-content-item-title">02</h3>
-                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
-                            <div class="grid-content-item-content">
-                                <span class="grid-content-item-line"></span>
-                                <h4 class="grid-content-item-content-title">Test</h4>
-                                <p class="grid-content-item-content-txt">About me </p>
-                            </div>
+                    <el-col :xs="{span:20,offset:2}" :sm="{span:10,offset:0}" :lg="{span:10,offset:2}">
+                        <div class="side-item-img img ">
+                            <img src="assets/image/2.jpg">
                         </div>
                     </el-col>
-                    <el-col :xs="8" :lg="6">
-                        <div class="grid-content-item">
-                            <h3 class="grid-content-item-title">03</h3>
-                            <div class="grid-content-item-img"><img src="assets/image/0.jpg"></div>
-                            <div class="grid-content-item-content">
-                                <span class="grid-content-item-line"></span>
-                                <h4 class="grid-content-item-content-title">Test</h4>
-                                <p class="grid-content-item-content-txt">About me </p>
+                </el-row>
+            </div>
+
+            <div class="grid-side-item">
+                <el-row>
+                    <el-row :gutter="20">
+                        <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                            :lg="{span:6,offset:3}">
+                            <div class="grid-content-item box2">
+                                <h3 class="grid-content-item-title">01</h3>
+                                <div class="grid-content-item-img"><img src="assets/image/1.jpg"></div>
+                                <div class="grid-content-item-content">
+                                    <span class="grid-content-item-line"></span>
+                                    <h4 class="grid-content-item-content-title" style="margin-bottom:20px;">Step 1</h4>
+                                    <p class="grid-content-item-content-txt">The first step of design the real magazine
+                                        is to choose a color palate that is suitable for our magazine’s theme.
+                                        As a group, we decided that the main idea of our magazine is about travel, and
+                                        the mood that tourist have during their journeys.
+                                    </p>
+                                </div>
+                            </div>
+                        </el-col>
+                        <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                            :lg="{span:6,offset:0}">
+                            <div class="grid-content-item box2">
+                                <h3 class="grid-content-item-title">02</h3>
+                                <div class="grid-content-item-img"><img src="assets/image/1.1.jpg"></div>
+                                <div class="grid-content-item-content">
+                                    <span class="grid-content-item-line"></span>
+                                    <h4 class="grid-content-item-content-title" style="margin-bottom:20px;">Step 2
+                                    </h4>
+                                    <p class="grid-content-item-content-txt">As the design group of this project,
+                                        the second step is to design a tittle for the magazine.
+                                        Since our magazine is about travel, the name we discussed as
+                                        a group is “the resident nomad”. We have created several versions of the tittle
+                                        of magazine, then in our group, we vote for which one is better for the
+                                        magazine.
+                                    </p>
+                                </div>
+                            </div>
+                        </el-col>
+                        <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                            :lg="{span:6,offset:0}">
+                            <div class="grid-content-item box2">
+                                <h3 class="grid-content-item-title">03</h3>
+                                <div class="grid-content-item-img"><img src="assets/image/1.2.jpg"></div>
+                                <div class="grid-content-item-content">
+                                    <span class="grid-content-item-line"></span>
+                                    <h4 class="grid-content-item-content-title" style="margin-bottom:20px;">Step 3</h4>
+                                    <p class="grid-content-item-content-txt">The third step is to design the cover page
+                                        of our magazine,
+                                        since the cover page is the first thing that people see, so we have to establish
+                                        the mood,
+                                        and the concept for our magazine, We designed three cover pages for the
+                                        magazine, and then as a group, decided on which one we should use for our cover
+                                        page.
+                                    </p>
+                                </div>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-row>
+            </div>
+
+            <div class="grid-side-item">
+                <div class="grid-side-punctuate"><label>‘‘</label></div>
+                <div class="side-item-three-content">
+                    <div>
+                        <h4 class="grid-content-item-content-title" style="margin-bottom:20px;">Step 4</h4>
+                        <p class="grid-content-item-content-txt1">As the designer of the group,</p>
+                        <p class="grid-content-item-content-txt1"> we have to design for the print publication and the
+                            web layout for our magazine,</p>
+                        <p class="grid-content-item-content-txt1"> and also the poster for our launch party.</p>
+                    </div>
+                </div>
+                <div class="grid-side-punctuate"><label>’’</label></div>
+            </div>
+
+            <div class="grid-side-item side-item">
+                <el-row>
+                    <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                        :lg="{span:9,offset:2}">
+                        <div class="side-item-img ">
+                            <img src="assets/image/2.1.jpg" style="display: block;margin: auto;">
+                        </div>
+
+                    </el-col>
+                    <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                        :lg="{span:8,offset:2}">
+                        <div class="side-item-text">
+                            <h4 class="side-item-title" style="margin-bottom: 20px;">Final Step</h4>
+                            <div class="side-item-content">
+                                We have our physical magazine printed, and present it in the class with all the real
+                                content inside. <p>
+                                    In this group, we all come from different background with different level. There are
+                                    two designers in our group, the other designer was busy this semester, the work she
+                                    had done is not satisfied our group’s expectation.
+                                    I talk to her, and re-divided the work, and help her with the work that she is not
+                                    capable of doing. From working with other student in my group, I learned that we
+                                    have to help each other, we cannot just finish our parts and left, and it is
+                                    important to communicate with each other, to see what they are thinking about the
+                                    work you have done,
+                                    if there is a problem, then as a team we can solve it together, we do not have to
+                                    face the problem alone.
+
                             </div>
                         </div>
                     </el-col>
                 </el-row>
-            </el-row>
-        </div>
-
-        <div class="grid-side-item">
-            <div class="grid-side-punctuate"><label>‘‘</label></div>
-            <div class="side-item-three-content">
-                <div>
-                   <p>I am a second-year student in Simon Fraser University, </p>
-                     and this is my first year in SIAT. I was major in environmental science at my first year, <p>
-                     however, I felt exhausted and bored when I took environmental courses<p>
-                    I felt SIAT is the program that I really want to get in after I taking several IAT courses.<p>
-                     I am an international student from China, after finishing my 10th grade in China, <p>
-                     I came to Vancouver to continue my high school. My personality is like a cat, shy, do not talk much and I love to be alone, I choose this picture to represent me because I enjoy seeing ocean, and it inspires me a lot.
-
-                </div>
             </div>
-            <div class="grid-side-punctuate"><label>’’</label></div>
-        </div>
+        </main>
 
-        <div class="grid-side-item side-item">
-            <el-row>
-                <el-col :xs="15" :lg="{span:12,offset:3}">
-                    <div class="side-item-img ">
-                        <img src="assets/image/0.jpg">
-                    </div>
-
-                </el-col>
-                <el-col :xs="9" :lg="6">
-                    <div class="side-item-text">
-                        <h4 class="side-item-title">About me </h4>
-                        <div class="side-item-content">
-                          I am a second-year student in Simon Fraser University, and this is my first year in SIAT. I was major in environmental science at my first year, however, I felt exhausted and bored when I took environmental courses. 
-
-                        </div>
-                    </div>
-                </el-col>
-            </el-row>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div>@copyright  2018-2019</div>
-    </footer>
-</div>
-<script>
-    var vue = new Vue({
-        el:"#app",
-        data:{
-            activeIndex: '1',
-        },
-        mounted() {
-
-        }
-    });
-</script>
+        <footer class="footer">
+          <a>  <div>@copyright 2018-2019</div> <a/>
+        </footer>
+    </div>
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            data: {
+                activeIndex: '1',
+            },
+            methods:{
+                step(){
+                    location.href = "index3.html"
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>

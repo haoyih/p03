@@ -1,5 +1,14 @@
+<!--
+ * @Descripttion:
+ * @version:
+ * @Author: WebZhouT
+ * @Date: 2019-11-20 19:55:44
+ * @LastEditors: WebZhouT
+ * @LastEditTime: 2019-11-20 23:45:47
+ -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,61 +20,72 @@
     <script src="assets/js/vue.js"></script>
     <script src="assets/js/element.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(242, 236, 231)
+        }
+    </style>
 </head>
+
 <body>
-<div id="app">
+    <div id="app">
 
-    <nav class="nav">
-        <el-row>
-            <el-col :lg="14" :xs="6"><div class="nav-title border">Yi Hao</div></el-col>
-            <el-col :lg="8" :xs="18">
-                <div class="nav-btn text-center border">
-                    <el-row>
-                        <el-col :span="4" :offset="2"><div class="nav-menu-item"><a href="index.html" >Home</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p1.html" >P1</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p2.html" >P2</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p3.html" >Contact</a></div></el-col>
-                        <el-col :span="4" ><div class="nav-menu-item"><a href="p4.html" >About</a></div></el-col>
-                    </el-row>
-                </div>
-            </el-col>
-        </el-row>
-    </nav>
+        <nav class="nav">
+            <el-row>
+                <el-col :lg="14" :xs="6">
+                    <div class="nav-title "><a href="Template/index3.html">Yi Hao</a></div>
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-1"><img src="assets/image/1.jpg"></div>
-            <div class="swiper-slide swiper-slide-2"><img src="assets/image/2.jpg"></div>
-            <div class="swiper-slide swiper-slide-3"><img src="assets/image/3.jpg"></div>
-            <div class="swiper-slide swiper-slide-4"><img src="assets/image/4.jpg"></div>
-            <div class="swiper-slide swiper-slide-5"><img src="assets/image/5.jpg"></div>
+                </el-col>
+                <el-col :lg="8" :xs="18">
+                    <div class="nav-btn text-center ">
+                        <el-row>
+                            <el-col :span="5" :offset="2">
+                                <div class="nav-menu-item"><a href="index.html">Home</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p1.html">Project1</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p2.html">Project2</a></div>
+                            </el-col>
+                            <el-col :span="5">
+                                <div class="nav-menu-item"><a href="p3.html">Contact</a></div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-col>
+            </el-row>
+        </nav>
+
+        <div class="swiper-container">
+            <img src="assets/image/home.jpg" style="margin-top:40px;height: auto;width: 100%;">
         </div>
+
+        <footer class="footer">
+          <a>  <div>@copyright 2018-2019</div> <a/>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <div>@copyright  2018-2019</div>
-    </footer>
-</div>
-<script>
-    var vue = new Vue({
-        el:"#app",
-        data:{
-            activeIndex: '1',
-        },
-        mounted() {
-        }
-    });
-
-    var mySwiper = new Swiper('.swiper-container',{
-        loop : true,
-        onTransitionEnd: function(swiper){
-            for (var i in vue.show_list) {
-                if (i == swiper.activeIndex - 1) vue.show_list[i].show = true;
-                else vue.show_list[i].show = false;
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            data: {
+                activeIndex: '1',
+            },
+            mounted() {
             }
+        });
 
-        }
-    })
-</script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            onTransitionEnd: function (swiper) {
+                for (var i in vue.show_list) {
+                    if (i == swiper.activeIndex - 1) vue.show_list[i].show = true;
+                    else vue.show_list[i].show = false;
+                }
+
+            }
+        })
+    </script>
 </body>
+
 </html>
