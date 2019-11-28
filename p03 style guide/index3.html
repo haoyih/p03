@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>P03 - Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <header>
+      <h1 class="title center">P03 - Style Guide Template</h1>
+    </header>
+
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#A37F6F ;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#E09873;
+}
+
+
+</style>
+</head>
+<body>
+  <ul>
+    <li><a class="#news" href="#home">In-text link</a></li>
+    <li><a href="#news">Headings</a></li>
+    <li><a href="#contact">Project 1</a></li>
+    <li><a href="#contact">Project 2</a></li>
+    <li><a href="#contact">Main Navigation</a></li>
+    <li><a href="#contact">Fonts</a></li>
+
+
+    <li style="float:right"><a href="#about">About Me</a></li>
+  </ul>
+  <br>
+  <br>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+
+
+
+
+
+        <section class="element">
+            <h2>In-text Link</h2>
+            <h4>CSS selector:</h4>
+            <p>.in-text</p>
+            <h4>Sample code:</h4>
+            <div class="in-text">
+                <code>&lt;a href="#" class="textlink"&gt;In-text link&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a class="textlink" href="#"><h4> In-text link</h4> </a>
+            </div>
+        </section>
+
+
+        <!-- Default Button styling section -->
+
+
+
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+        <section class="element">
+            <h2>Headings</h2>
+            <h4>CSS selector:</h4>
+            <p>.headings</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;h2&gt;level one&lt;/h2&gt;<br>
+                &lt;h3&gt;level two&lt;/h3&gt;<br>
+                &lt;h4&gt;level three&lt;/h4&gt;<br>
+                &lt;h5&gt;level four&lt;/h5&gt;<br>
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="headings">
+                <h2 class="one">level one</h2>
+                <h3 class="two">level two</h3>
+                <h4 class="three">level three</h4>
+                <h5 class="four">level four</h5>
+            </div>
+        </section>
+
+        <section class="element">
+            <h2>PROJECT 1 </h2>
+            <h4>CSS selector:</h4>
+            <p>.paragraphs</p>
+            <h4>Sample code:</h4>
+            <code>&lt;p class="paragraphs"&gt; In this class...&lt;/p&gt;</code>
+            <h4>IAT222 Interactive Arts:</h4>
+            <p class="paragraphs">In this class, we as a team are asked to produce a work of interactive arts. This work
+            will be displayed at SIAT,
+            and it has to reflect artist practice in at least one area of studied in class.
+                First step: as a group, we signed a team contract. We made rules within the team,
+                for example, what will we do if one team member missed a meeting, or missed a
+                presentation.
+ </p>
+ <h4>Second step:</h4>
+ <p class="paragraphs">  The team had to determine the overall topic for the artwork. Additionally, we had to
+   choose a scope which interested all team members while reflecting team inspirations.
+   This helped decide our final project goal.<p>
+     <h4>Third step:</h4>
+     <p class="paragraphs"> We introduced our artwork proposal. First the team decided on a single topic after
+       discussing what we wanted to present within the final artwork. Other areas were
+       considered, such as how to make the piece work. For instance, utilizing sketches for
+       showing how the final piece should appear, ways it could interact with audience members,
+       and what type of feeling it should create.<p>
+         <h4>Forth/Fifth step:</h4>
+         <p class="paragraphs"> The artwork prototype. The team
+         began working and encounter several problems. First, the professor stated our prototype
+         was too simple.
+         Therefore, we had to discussed and rethink of alternative methods for participants to
+         interact with the final artwork.<p>
+             Final project in the Gallery. Our final artwork was showcased at SFU. To ensure
+             participants understood, we included a description with the final piece. We lacked
+             enough gold paper during the final stage,
+             therefore, we decided to apply it only on two sides of the box’s interior. Instead
+             of four sides.<p>
+               <br>
+               <a id="picone" href="">
+                   <img src="images/a4.jpg" alt="project 1 picture">
+               </a>
+        </section>
+
+        <section class="element">
+            <h2>PROJECT 2 </h2>
+            <h4>CSS selector:</h4>
+            <p>.paragraphs</p>
+            <h4>Sample code:</h4>
+            <code>&lt;p class="paragraphs"&gt; In this class...&lt;/p&gt;</code>
+            <h4>PUB 375:</h4>
+            <p class="paragraphs">This is a project from Pub 375, the goal of this project is to build up a
+            real magazine through the whole semester, we were working in group of five,
+            two of us from IAT program are responsible for design the magazine.
+ </p>
+ <h4>Step 1:</h4>
+ <p class="paragraphs">  The first step of design the real magazine
+     is to choose a color palate that is suitable for our magazine’s theme.
+     As a group, we decided that the main idea of our magazine is about travel, and
+     the mood that tourist have during their journeys.<p>
+     <h4>Step 2:</h4>
+     <p class="paragraphs"> As the design group of this project,
+         the second step is to design a tittle for the magazine.
+         Since our magazine is about travel, the name we discussed as
+         a group is “the resident nomad”. We have created several versions of the tittle
+         of magazine, then in our group, we vote for which one is better for the
+         magazine.<p>
+         <h4>Step 3:</h4>
+         <p class="paragraphs"> he third step is to design the cover page
+             of our magazine,
+             since the cover page is the first thing that people see, so we have to establish
+             the mood,
+             and the concept for our magazine, We designed three cover pages for the
+             magazine, and then as a group, decided on which one we should use for our cover
+             page.<p>
+               <h4>Step 4:</h4>
+               <p class="paragraphs"> As the designer of the group,
+            we have to design for the print publication and the
+                   web layout for our magazine,
+                and also the poster for our launch party.</p>.
+
+               <br>
+               <a id="picone" href="">
+                   <img src="images/1.jpg" alt="project 1 picture">
+               </a>
+        </section>
+
+        <section class="element">
+            <h2>About Me </h2>
+            <h4>CSS selector:</h4>
+            <p>.paragraphs</p>
+            <h4>Sample code:</h4>
+            <code>&lt;p class="paragraphs"&gt; In this class...&lt;/p&gt;</code>
+            <h4>About Me</h4>
+            <p class="paragraphs">  This is my second year as a Simon Fraser University student, but the first-year for
+              SIAT. During the first year my major was environmental science, but the environmental
+              courses had become boring. Therefore, I decided I wanted to take the SIAT program after
+              I took various many IAT courses. Originally from China where I completed the 10t grade,
+              then relocated to Vancouver where I continued high school. I have a personality similar
+              to a cat, I am shy, prefer being alone and not much of a talker. The picture I choose
+              for representing me is one that inspires me and incorporates my love for oceans.
+      </p>
+      <h4>Interest of Emploment:</h4>
+      <p class="paragraphs">    I am interested in graphic design job positions, any job that related
+        to graphic design is interested. I am familiar with InDesign, AI, and Photoshop. I am
+        also a quick learner, anything that I do not learn from school can be learned very
+        quickly. I want to find a job that really suits me, and I am a hard worker.<p>
+
+
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+        <section class="element">
+            <h2>Main Navigation</h2>
+            <h4>CSS selector:</h4>
+            <p>.navigation</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;nav&gt;<br>
+                &lt;ol id="nav_items"&gt;<br>
+                &lt;li&gt;&lt;a&gt;Yi Hao&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;Project 1&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;Project 2&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+                &lt;/nav&gt;
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="header">
+                <a href="Home.html">Yi Hao</a>
+                <a href="p1.html">Project 1</a>
+                <a href="p2.html">Project 2</a>
+                <a href="p3.html">Contact</a>
+        </div>
+
+        </section>
+
+                <section class="element">
+                    <h2>Fonts & Color Palate</h2>
+                    <h3>Fonts</h3>
+                    <P id="fonts_type1">Monaco</P>
+                    <P id="fonts_type2">Sans-serif</P>
+                    <h3>color platte</h3>
+
+                    <img id="col" src="images/colors.jpg" alt="color platte" width="500" height="300"></a>
+                    <ol id="color_platte">
+                        <li1>#7584AD</li1>
+                        <li1>#314570</li1>
+                        <li1>#AEDED6</li1>
+                        <li1>#E09873</li1>
+                        <li1>#A37F6F</li1>
+                    </ol>
+                </section>
+            </section>
+
+
+
+            <section>
+                <h2> Citations</h2>
+                The camera picture is referenced from <a href="https://search.jd.com/Search?keyword=相机&enc=utf-8&wq=xiangji&pvid=6f78391a44864447addb2b677a52b2d6">URL</a>
+            </section>
+
+</body>
+</html>
